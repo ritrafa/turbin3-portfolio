@@ -15,7 +15,7 @@ This repo showcases work done for the WBA Turbine 2024 Q3 Cohort, as well as som
 
 ## Bonkathon Submission - SOLSQUARE
 
-![SOLSQUARE](image.png)
+![SOLSQUARE](img/image.png)
 
 [SOLSQUARE Live Devnet Site](https://solsquare.net) | [Github](https://github.com/altaga/SolSquare)
 
@@ -23,7 +23,7 @@ SolSquare is a decentralized social media that promotes economic incentives for 
 
 ## Solana Speedrun 3 Submission - Manic Entanglement
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 [Live Site](https://manic-entanglement.com)
 
@@ -35,7 +35,7 @@ This uses next.js, metaplex core, and pinata ipfs, and any playable nft loads as
 
 ## Bookmark Manager - slug0
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 [Live Site](https://slug0.net) | Closed Source (happy to share)
 
@@ -43,7 +43,7 @@ This custom bookmark manager was made over a weekend because I wasn't happy with
 
 ## Product Page - Spirit Decks
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 [Live Site](https://spiritdecks.com) | Closed Source (happy to share)
 
