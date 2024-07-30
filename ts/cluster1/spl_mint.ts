@@ -1,29 +1,46 @@
 import { Keypair, PublicKey, Connection, Commitment } from "@solana/web3.js";
-import { getOrCreateAssociatedTokenAccount, mintTo } from '@solana/spl-token';
-import wallet from "../wba-wallet.json"
+import { getOrCreateAssociatedTokenAccount, mintTo } from "@solana/spl-token";
+import wallet from "../../wba-wallet.json"; // Import rafa's wallet
 
-// Import our keypair from the wallet file
+// Load keypair from the imported wallet
 const keypair = Keypair.fromSecretKey(new Uint8Array(wallet));
 
-//Create a Solana devnet connection
+// Connect to Solana devnet
+// Commitment level is set to "confirmed" to ensure that the mint is finalized
+// mainnet url is "https://api.mainnet-beta.solana.com"
+// devnet url is "https://api.devnet.solana.com"
+// testnet url is "https://api.testnet.solana.com"
 const commitment: Commitment = "confirmed";
 const connection = new Connection("https://api.devnet.solana.com", commitment);
 
-const token_decimals = 1_000_000n;
+const token_decimals = 1_000_000_000n;
 
 // Mint address
-const mint = new PublicKey("<mint address>");
+const mint = new PublicKey("EpmT5jUpegMnyLeLMarFaKMkLCMBeCgyr27XiqoUNKm6");
 
 (async () => {
-    try {
-        // Create an ATA
-        // const ata = ???
-        // console.log(`Your ata is: ${ata.address.toBase58()}`);
+  try {
+    const ata = await getOrCreateAssociatedTokenAccount(
+      connection,
+      keypair, // payer
+      mint, // mint address
+      keypair.publicKey // owner address
+    );
 
-        // Mint to ATA
-        // const mintTx = ???
-        // console.log(`Your mint txid: ${mintTx}`);
-    } catch(error) {
-        console.log(`Oops, something went wrong: ${error}`)
-    }
-})()
+    const mintTx = await mintTo(
+      connection,
+      keypair, // payer
+      mint, // mint address
+      ata.address, // destination address (newly created ata)
+      keypair.publicKey, // mint authority
+      1_000n * token_decimals // amount, this will mint 1000 new tokens
+    );
+
+    console.log(`Your mint txid: ${mintTx}`);
+    console.log(
+      `Transaction: https://explorer.solana.com/tx/${mintTx}?cluster=devnet`
+    );
+  } catch (error) {
+    console.log(`Oops, something went wrong: ${error}`);
+  }
+})();
