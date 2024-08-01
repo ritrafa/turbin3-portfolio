@@ -5,6 +5,9 @@ import {
   CreateMetadataAccountV3InstructionAccounts,
   CreateMetadataAccountV3InstructionArgs,
   DataV2Args,
+  updateMetadataAccountV2,
+  UpdateMetadataAccountV2InstructionAccounts,
+  UpdateMetadataAccountV2InstructionDataArgs,
 } from "@metaplex-foundation/mpl-token-metadata";
 import {
   createSignerFromKeypair,
@@ -24,28 +27,26 @@ umi.use(signerIdentity(createSignerFromKeypair(umi, keypair)));
 
 (async () => {
   try {
-    let accounts: CreateMetadataAccountV3InstructionAccounts = {
-      mint: mint,
-      mintAuthority: signer,
+    let accounts: UpdateMetadataAccountV2InstructionAccounts = {
+      metadata: publicKey("Be9VFpGsE7CZeckD1CVwGdtXLg6odtV1Ta6Z1kWLDepS"),
+      updateAuthority: signer,
     };
 
     let data: DataV2Args = {
       name: "Rafa Medals",
       symbol: "RFM",
-      uri: "https://white-magnetic-mockingbird-979.mypinata.cloud/ipfs/QmevKFKBgZm9fqn9hm6nTnjLhUQsVpNeybRJX3STFXQSLL",
+      uri: "https://white-magnetic-mockingbird-979.mypinata.cloud/ipfs/QmPUtTnXoJLLFCfMvgs3Zwr7XsCAYChCgJ4m7SEjpiSZHF",
       sellerFeeBasisPoints: 500,
       creators: [{ address: keypair.publicKey, verified: true, share: 100 }],
       collection: null,
       uses: null,
     };
 
-    let args: CreateMetadataAccountV3InstructionArgs = {
+    let args: UpdateMetadataAccountV2InstructionDataArgs = {
       data: data,
-      isMutable: true,
-      collectionDetails: null,
     };
 
-    let tx = createMetadataAccountV3(umi, {
+    let tx = updateMetadataAccountV2(umi, {
       ...accounts,
       ...args,
     });

@@ -85,7 +85,7 @@ Here is the final [transaction](https://explorer.solana.com/tx/54F32PnGEE2vAeNau
         npm install --force // Or fix depedents
 
 2.  Add a wba-wallet address private key locally, and double check <code>.gitignore</code> based on your wallet file naming convention
-3.  After updating any ts files, use <code>node {name in package.json scripts}</code> to run them
+3.  After updating any ts files, use <code>npm run {name in package.json scripts}</code> to run them
 
         cd ts
-        node spl_init
+        npm run spl_init
