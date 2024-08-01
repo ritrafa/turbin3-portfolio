@@ -25,7 +25,7 @@ SolSquare is a decentralized social media that promotes economic incentives for 
 
 ![alt text](img/image-1.png)
 
-[Live Site](https://manic-entanglement.com)
+[Live Site](https://manic-entanglement.com) | [Github](https://github.com/ritrafa/manic-entanglement)
 
 Created as an entry for Solana Speedrun 3, this game was created in one week. Every step you take reshuffles the maze, and every power-up you pick up gives perpetual boosts.
 
