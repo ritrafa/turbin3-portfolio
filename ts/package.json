@@ -18,6 +18,8 @@
     "nft_image": "ts-node ./cluster1/nft_image.ts",
     "nft_metadata": "ts-node ./cluster1/nft_metadata.ts",
     "nft_mint": "ts-node ./cluster1/nft_mint.ts",
+    "nft_rug_mint": "ts-node ./cluster1/nft_rug_mint.ts",
+    "nft_core_collection": "ts-node ./cluster1/nft_core_collection.ts",
     "vault_init": "ts-node ./cluster1/vault_init.ts",
     "vault_deposit": "ts-node ./cluster1/vault_deposit.ts",
     "vault_withdraw": "ts-node ./cluster1/vault_withdraw.ts",
@@ -29,6 +31,7 @@
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.29.0",
+    "@metaplex-foundation/mpl-core": "^1.0.2",
     "@metaplex-foundation/mpl-token-metadata": "3.1.1",
     "@metaplex-foundation/umi": "^0.8.10",
     "@metaplex-foundation/umi-bundle-defaults": "^0.8.10",
