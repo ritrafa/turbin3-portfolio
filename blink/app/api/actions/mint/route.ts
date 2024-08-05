@@ -25,6 +25,8 @@ import { transferV1 } from "@metaplex-foundation/mpl-core";
 
 import { Pool } from "pg";
 
+export const maxDuration = 60; // This function can run for a maximum of 60 seconds
+
 const pool = new Pool({
   connectionString: process.env.POSTGRES_URL,
 });
