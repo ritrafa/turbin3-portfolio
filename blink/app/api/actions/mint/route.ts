@@ -1,4 +1,3 @@
-import wallet from "../../../../../rre-wallet.json";
 import {
   ActionGetResponse,
   ACTIONS_CORS_HEADERS,
