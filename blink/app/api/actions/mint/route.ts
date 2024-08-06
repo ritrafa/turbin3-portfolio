@@ -64,8 +64,9 @@ export const GET = async (req: Request) => {
     icon: "https://turbin3-portfolio.vercel.app/rug_combine.gif",
     label: "Mint",
     description:
-      "Mint a rare rug, for just the cNFT cost, if you guess a previously unused number.",
+      "SOLD OUT! Mint a rare rug, for just the cNFT cost, if you guess a previously unused number.",
     title: "Rit Rafa's Rare Rug Emporium",
+    disabled: true,
     links: {
       actions: [
         {

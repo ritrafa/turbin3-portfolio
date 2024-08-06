@@ -49,7 +49,19 @@ This custom bookmark manager was made over a weekend because I wasn't happy with
 
 This is a site I built for a physical product I created with my wife and our graphic designer. It is a set of cards that prompt discussion on various Proverbs, used to teach wisdom. The site include 3d card samples.
 
-# Turbine3 Work
+# Turbin3 Work
+
+## Necessary Run Tasks for Turbin3
+
+1.  Standard install of necessary modules
+
+        npm install --force // Or fix depedents
+
+2.  Add a wba-wallet address private key locally, and double check <code>.gitignore</code> based on your wallet file naming convention
+3.  After updating any ts files, use <code>npm run {name in package.json scripts}</code> to run them
+
+        cd ts
+        npm run spl_init
 
 ## Prerequisite Task
 
@@ -78,14 +90,43 @@ Files:
 
 Here is the final [transaction](https://explorer.solana.com/tx/54F32PnGEE2vAeNau2sJwanpYwrfHBSqRkZKevN9nQs13TFiZErDvp2vjWPopg1s7rNZU61CBrtCYsWr9eqxLBNs?cluster=devnet) of this class' work, which is the mint tx.
 
-## Necessary Run Tasks
+## 240731 - Class 2
 
-1.  Standard install of necessary modules
+After class 2, we proceed with adding metadata to our spls then transferred them on to classmates.
+![Rafa Medals](img\image-4.png)
 
-        npm install --force // Or fix depedents
+Files:
 
-2.  Add a wba-wallet address private key locally, and double check <code>.gitignore</code> based on your wallet file naming convention
-3.  After updating any ts files, use <code>npm run {name in package.json scripts}</code> to run them
+    ts\cluster1\spl_metadata.ts
+    ts\cluster1\spl_transfer.ts
 
-        cd ts
-        npm run spl_init
+## 240801 - Class 3
+
+In class 3, we tested out the metaplex nft irys upload and mint features. I added an animation to my rug via Aseprite.
+
+![Animated Rug](img\rug.gif)
+
+Files:
+
+    ts\cluster1\nft_image.ts
+    ts\cluster1\nft_metadata.ts
+    ts\cluster1\nft_mint.ts
+
+## 240804 - Weekend Blink Bonus
+
+Over the weekend, I build a blink that allowed the mint of one of 25 animated rugs. The special gimmick of the blink is that it forced someone to guess a number that had not yet been used. Once any guess was made, they would need to wait 1 minute before it allowed another guess.
+
+To make it not enforce any payments, if someone submitted a correct guess, I sent them the core nft, but then requested a transfer to cover mint costs. Given the small size of the the test group I was ok even if I didn't recoup all the mint costs.
+
+[x Post](https://x.com/RitRafa/status/1820512886474805508)
+![Rare Rug Emporium Blink](img/image-6.png)
+![Rare Rug Examples](img/rug-combine.gif)
+
+In retrospect, I wish I had made the batch size slightly bigger, and reworded the x post to help it gain more virality. I have noticed that when I present things as tests/for fun, they typically receive slightly less tractions.
+
+Files:
+
+    ts\cluster1\nft_core_collection.ts
+    ts\cluster1\nft_rug_mint.ts
+    blink\app\actions.json\route.ts
+    blink\api\actions\mint\route.ts
