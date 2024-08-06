@@ -94,7 +94,7 @@ Here is the final [transaction](https://explorer.solana.com/tx/54F32PnGEE2vAeNau
 
 After class 2, we proceeded with adding metadata to our spls then transferred them on to classmates.
 
-![Rafa Medals](img/image-4.png)
+![alt text](img/image-4.png)
 
 Files:
 
@@ -105,7 +105,7 @@ Files:
 
 In class 3, we tested out the metaplex nft irys upload and mint features. I added an animation to my rug via Aseprite.
 
-![Animated Rug](img/rug.gif)
+![alt text](img/rug.gif)
 
 Files:
 
