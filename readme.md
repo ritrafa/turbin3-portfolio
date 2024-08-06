@@ -92,7 +92,7 @@ Here is the final [transaction](https://explorer.solana.com/tx/54F32PnGEE2vAeNau
 
 ## 240731 - Class 2
 
-After class 2, we proceed with adding metadata to our spls then transferred them on to classmates.
+After class 2, we proceeded with adding metadata to our spls then transferred them on to classmates.
 
 ![Rafa Medals](img\image-4.png)
 
