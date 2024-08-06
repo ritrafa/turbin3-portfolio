@@ -93,6 +93,7 @@ Here is the final [transaction](https://explorer.solana.com/tx/54F32PnGEE2vAeNau
 ## 240731 - Class 2
 
 After class 2, we proceed with adding metadata to our spls then transferred them on to classmates.
+
 ![Rafa Medals](img\image-4.png)
 
 Files:
@@ -118,9 +119,11 @@ Over the weekend, I build a blink that allowed the mint of one of 25 animated ru
 
 To make it not enforce any payments, if someone submitted a correct guess, I sent them the core nft, but then requested a transfer to cover mint costs. Given the small size of the the test group I was ok even if I didn't recoup all the mint costs.
 
-[x Post](https://x.com/RitRafa/status/1820512886474805508)
 ![Rare Rug Emporium Blink](img/image-6.png)
-![Rare Rug Examples](img/rug-combine.gif)
+
+![Rare Rug Examples](img/rug_combine.gif)
+
+[x Post](https://x.com/RitRafa/status/1820512886474805508)
 
 In retrospect, I wish I had made the batch size slightly bigger, and reworded the x post to help it gain more virality. I have noticed that when I present things as tests/for fun, they typically receive slightly less tractions.
 
