@@ -123,6 +123,7 @@ To make it not enforce any payments, if someone submitted a correct guess, I sen
 
 ![Rare Rug Examples](img/rug_combine.gif)
 
+[Blink](https://dial.to/?action=solana-action:https://ritrafa.dev/api/actions/mint)
 [x Post](https://x.com/RitRafa/status/1820512886474805508)
 
 In retrospect, I wish I had made the batch size slightly bigger, and reworded the x post to help it gain more virality. I have noticed that when I present things as tests/for fun, they typically receive slightly less tractions.

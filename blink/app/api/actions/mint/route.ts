@@ -71,7 +71,7 @@ export const GET = async (req: Request) => {
       actions: [
         {
           href: "/api/actions/mint?number={number}",
-          label: "Guess",
+          label: "Sold Out",
           parameters: [
             {
               name: "number",
