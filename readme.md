@@ -142,3 +142,35 @@ In this class we used Anchor to create a simple vault program with the following
 Files:
 
     anchor_vault_q3_2024\programs\anchor_vault_q3_2024\src\lib.rs
+
+## 240807 - Class 5
+
+In this class we used Anchor to create an escrow contract.
+
+Files:
+
+    anchor_escrow\programs\anchor_escrow\src\lib.rs
+
+## 240808 - Class 6
+
+In this class we used Anchor to create an amm contract.
+
+Files:
+
+    amm\programs\amm\src\lib.rs
+
+## 2408013 - 240815 - Class 7, 8, 9
+
+In this set of classes, we developed an nft staking program.
+
+Files:
+
+    nft-staking\programs\nft-staking\src\lib.rs
+
+## Capstone
+
+Please see all capstone details, currently summary and user storeies in the following folder:
+
+Folder:
+
+    capstone
