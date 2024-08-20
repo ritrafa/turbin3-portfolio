@@ -28,8 +28,8 @@ I will write the tests in TypeScript and look forward to checking out Lava as pa
 
 The tool itself will be a phone-first webapp, with a modern greco-roman style design, classic off-whites and serif fonts with some small pixel elements to clearly tie it into web3. Everything will be built with first users in mind, with live loading tutorials upon first entry.
 
-### Initial Feedback
+## Initial Feedback
 
-Understood as an index
-Low amount of questions, indicating either understandering or lack of interest
-“I already understand it because I have seen it before”
+- Understood as an index
+- Low amount of questions, indicating either understandering or lack of interest
+- “I already understand it because I have seen it before”
