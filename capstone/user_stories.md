@@ -28,8 +28,8 @@ Please see [ACREW](https://acrew.ritrafa.dev/) for interactive user stories!
 
 ## NFT Community Integration
 
-17. As an NFT holder, I want to participate in exclusive savings plans gated by my NFT ownership so that I can engage with my community financially. [not in mvp]
-18. As an NFT community member, I want to enter raffles for participating in shared plans so that I have additional incentives to join. [not in mvp]
+17. As an new user, I want to participate in exclusive savings plans gated by my NFT ownership so that I can engage with my community financially. [not in mvp]
+18. As an new user, I want to enter raffles for participating in shared plans so that I have additional incentives to join. [not in mvp]
 
 ## Future Extensions
 
