@@ -84,7 +84,7 @@ pub mod acrew {
             AcrewError::SavingsPlanStillActive
         );
 
-        ctx.accounts.withdraw(savings_plan)
+        instructions::withdraw::withdraw(ctx, savings_plan)
     }
 }
 
